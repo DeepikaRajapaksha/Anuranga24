@@ -1,25 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-nav ul {
-    display: flex;
-    gap: 20px;
-    background: #333;
-    color: white;
-    padding: 10px;
+
+/* NavigationBar Styles.. */
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #020202;
+  padding: 10px 30px;
+  box-shadow: 0 4px 6px rgba(29, 29, 29, 0.1);
+  margin: 20px;
+  border-radius: 20px;
+  border: 8px solid rgb(255, 213, 0);
+  overflow: hidden;
 }
-nav ul li a {
-    color: white;
-    text-decoration: none;
+
+.snowflake {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: gold;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: float 5s linear infinite;
 }
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1.8;
+  }
+  25% {
+    transform: translate(30px, -30px) rotate(45deg);
+    opacity: 1.5;
+  }
+  50% {
+    transform: translate(-20px, 40px) rotate(90deg);
+    opacity: 1.7;
+  }
+  75% {
+    transform: translate(40px, -10px) rotate(135deg);
+    opacity: 1.6;
+  }
+  100% {
+    transform: translate(0, 0) rotate(180deg);
+    opacity: 1.8;
+  }
+}
+
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+  margin-right: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: rgb(255, 213, 0);
+}
+
+.login-button button {
+  background-color: gold;        
+  color: white;                  
+  border: 2px solid #a9a9a9;    
+  padding: 8px 25px;
+  font-size: 17px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-button button:hover {
+  background-color: rgb(255, 213, 0);     
+  color: #f0f0f0;                
+}
+
+/* Footer Styles.. */
 footer {
     background: #222;
     color: #ccc;
     padding: 10px;
     text-align: center;
 }
+
+/* Home Page styles.. */
 .hero {
     padding: 50px;
     background: #f4f4f4;
