@@ -177,7 +177,7 @@ body {
 .hero-default{
   padding:20px;
   position: relative;
-  height: 100vh;
+  height: auto;
   overflow: hidden;
   text-align: center;
 }

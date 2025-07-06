@@ -5,7 +5,9 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <body>
-    {{-- @include('partials.nav') --}}
+    {{-- <div class="hero-default">
+        @include('partials.nav')
+    </div> --}}
     <div class="main-content">
         @yield('content')
     </div>

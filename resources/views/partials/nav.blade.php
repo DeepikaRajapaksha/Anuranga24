@@ -3,11 +3,11 @@
     <img src="{{ asset('images/pagelogo.png') }}" alt="Logo" class="logo">
   </div>
   <ul class="nav-links">
-    <li><a href="">Home</a></li>
-    <li><a href="">About Us</a></li>
-    <li><a href="">Projects</a></li>
-    <li><a href="">Booking</a></li>
-    <li><a href="">Contact Us</a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About Us</a></li>
+    <li><a href="projects">Projects</a></li>
+    <li><a href="booking">Booking</a></li>
+    <li><a href="contact">Contact Us</a></li>
   </ul>
   <div class= "login-button">
     <button> Login </button>
